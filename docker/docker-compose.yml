@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  database:
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: eagle_eye_local
+      MYSQL_ROOT_PASSWORD: tripro123
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:

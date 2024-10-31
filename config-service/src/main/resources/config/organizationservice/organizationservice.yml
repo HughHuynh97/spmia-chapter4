@@ -1,0 +1,17 @@
+tracer:
+  property: "I AM THE DEFAULT TEST"
+spring:
+  datasource:
+    url: "jdbc:mysql://localhost:3306/eagle_eye_local"
+    username: "root"
+    password: "{cipher}62020463d0b103184af504142b5907c5c34e96f142c2f7216135e745098fb73b"
+    driver-class-name: "com.mysql.cj.jdbc.Driver"
+    platform: "mysql"
+    test-while-idle: "true"
+    validation-query: "SELECT 1"
+  jpa:
+    database: "mysql"
+    show-sql: "true"
+    properties:
+      hibernate:
+        dialect: "org.hibernate.dialect.MySQLDialect"

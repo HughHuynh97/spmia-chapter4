@@ -1,0 +1,16 @@
+server:
+  port: 9000
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        encrypt:
+          enabled: false
+        native:
+          searchLocations:
+            classpath:/config/licensingservice,
+            classpath:/config/organizationservice
+encrypt:
+  key: "my-secret-key"
