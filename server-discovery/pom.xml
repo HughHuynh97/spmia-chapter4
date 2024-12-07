@@ -21,7 +21,7 @@
     </dependencyManagement>
 
     <groupId>com.thoughtmechanix</groupId>
-    <artifactId>eurekasvr</artifactId>
+    <artifactId>server-discovery</artifactId>
     <version>0.0.1</version>
     <name>eurekasvr</name>
     <description>eurekasvr</description>
